@@ -2,8 +2,8 @@ import { DELETE_ITEM, CANCEL_PROMO, DECREASE_ITEM, INCREASE_ITEM, TAB_SWITCH } f
 import { recommendedItems, items } from '../initialData'
 
 const initialState = {
-    items: [],
-    recommendedItems: [],
+    items: [items],
+    recommendedItems: [...recommendedItems],
     promoCode: '',
     promoDiscount: null,
     currentTab: 'items',
